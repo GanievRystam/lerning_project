@@ -1,5 +1,4 @@
-import { LOCAL_STOTAGE_THEME_KEY, ThemeContext } from "./themeContext"
-import { Theme } from "./themeContext";
+import { LOCAL_STOTAGE_THEME_KEY, ThemeContext, Theme } from "../lib/themeContext"
 import { FC, useMemo, useState } from "react";
 
 interface HeaderProps {
