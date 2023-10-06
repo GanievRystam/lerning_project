@@ -1,7 +1,8 @@
 module.exports = {
     "env": {
         "browser": true,
-        "es2021": true
+        "es2021": true,
+        "jest": true
     },
     "extends": [
         "standard-with-typescript",
@@ -33,7 +34,9 @@ module.exports = {
         'react/jsx-indent': [2, 4],
         "@typescript-eslint/prefer-nullish-coalescing": 0,
         "semi": "off",
+        "@typescript-eslint/strict-boolean-expressions": "warn",
         "@typescript-eslint/semi": "off",
-        "i18next/no-literal-string": ['error', {markupOnly: true}]
+        "i18next/no-literal-string": ['error', {markupOnly: true}],
+        "@typescript-eslint/explicit-function-return-type": "off"
     }
 }

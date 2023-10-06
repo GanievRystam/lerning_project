@@ -1,6 +1,5 @@
-import { Navbar } from "./ul/Navbar";
-
+import { Navbar } from './ul/Navbar';
 
 export {
-    Navbar
+  Navbar
 };
