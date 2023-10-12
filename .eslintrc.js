@@ -37,6 +37,7 @@ module.exports = {
         "@typescript-eslint/strict-boolean-expressions": "warn",
         "@typescript-eslint/semi": "off",
         "i18next/no-literal-string": ['error', {markupOnly: true}],
-        "@typescript-eslint/explicit-function-return-type": "off"
+        "@typescript-eslint/explicit-function-return-type": "off",
+        "@typescript-eslint/strict-boolean-expressions": 0
     }
 }

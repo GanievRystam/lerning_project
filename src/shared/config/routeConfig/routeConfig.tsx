@@ -1,8 +1,8 @@
 import React from 'react'
-import { AboutPage } from 'pages/aboutPage'
-import { MainPage } from 'pages/mainPage'
+import { AboutPage } from '../../../pages/aboutPage'
+import { MainPage } from '../../../pages/mainPage'
 import { type RouteProps } from 'react-router-dom'
-import { NotFoundPage } from 'pages/NotFoundPage'
+import { NotFoundPage } from '../../../pages/NotFoundPage'
 
 export enum AppRoutes {
   MAIN = 'main',
