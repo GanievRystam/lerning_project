@@ -11,9 +11,6 @@ const meta = {
     layout: 'centered',
   },
   tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' }, 
-  },
 } satisfies Meta<typeof ThemeSwitcher>;
 
 export default meta;

@@ -8,15 +8,9 @@ const meta = {
   title: 'widgets/LangSwitcher',
   component: LangSwitcher,
   parameters: {
-    layout: 'centered',
+    layout: 'centered'
   },
-  tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' }, 
-  },
-  args: {
-    to: '/'
-  }
+  tags: ['autodocs']
 } satisfies Meta<typeof LangSwitcher>;
 
 export default meta;
@@ -25,12 +19,12 @@ type Story = StoryObj<typeof meta>;
 
 export const PRIMARY: Story = {
   args: {
-    children: 'TEXT'
-  },
-}; 
+    className: 'TEXT'
+  }
+}
 export const SECONDARY: Story = {
-  args: { 
-    children: 'TEXT'
-  },
+  args: {
+    className: 'TEXT'
+  }
 };
 SECONDARY.decorators = [ThemeDecorator(Theme.DARK)]

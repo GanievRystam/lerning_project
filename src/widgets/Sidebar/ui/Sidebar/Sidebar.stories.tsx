@@ -8,12 +8,9 @@ const meta = {
   title: 'widgets/Sidebar',
   component: Sidebar,
   parameters: {
-    layout: 'centered',
+    layout: 'centered'
   },
-  tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' }, 
-  },
+  tags: ['autodocs']
 } satisfies Meta<typeof Sidebar>;
 
 export default meta;
@@ -21,9 +18,9 @@ export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Light: Story = {
-  args: {},
-}; 
+  args: {}
+}
 export const Dark: Story = {
-  args: { },
+  args: { }
 };
 Dark.decorators = [ThemeDecorator(Theme.DARK)]

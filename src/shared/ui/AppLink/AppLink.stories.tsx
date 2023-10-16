@@ -8,12 +8,11 @@ const meta = {
   title: 'widgets/AppLink',
   component: AppLink,
   parameters: {
-    layout: 'centered',
+    layout: 'centered'
   },
-  tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' }, 
-  },
+  args: {
+    to: '/'
+  }
 } satisfies Meta<typeof AppLink>;
 
 export default meta;
@@ -22,14 +21,14 @@ type Story = StoryObj<typeof meta>;
 
 export const PRIMARY: Story = {
   args: {
-    children: 'TEXT',
+    className: 'TEXT',
     theme: AppLinkTheme.PRIMARY
-  },
-}; 
+  }
+}
 export const SECONDARY: Story = {
-  args: { 
-    children: 'TEXT',
+  args: {
+    className: 'TEXT',
     theme: AppLinkTheme.SECONDARY
-  },
+  }
 };
 SECONDARY.decorators = [ThemeDecorator(Theme.DARK)]

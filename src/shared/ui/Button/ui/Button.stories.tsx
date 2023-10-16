@@ -8,12 +8,9 @@ const meta = {
   title: 'shared/Button',
   component: Button,
   parameters: {
-    layout: 'centered',
+    layout: 'centered'
   },
-  tags: ['autodocs'],
-  argTypes: {
-    backgroundColor: { control: 'color' }, 
-  },
+  tags: ['autodocs']
 } satisfies Meta<typeof Button>;
 
 export default meta;
@@ -22,21 +19,21 @@ type Story = StoryObj<typeof meta>;
 export const Primary: Story = {
   args: {
     children: 'TEXT'
-  },
-}; 
+  }
+};
 Primary.decorators = [ThemeDecorator(Theme.DARK)]
 export const Clear: Story = {
   args: {
     children: 'TEXT',
     theme: ThemeButton.CLEAR
-  },
+  }
 };
 
 export const Outline: Story = {
-    args: {
-      children: 'TEXT',
-      theme: ThemeButton.OUTLINE
-    },
-  };
+  args: {
+    children: 'TEXT',
+    theme: ThemeButton.OUTLINE
+  }
+};
 
 Outline.decorators = [ThemeDecorator(Theme.DARK)]
